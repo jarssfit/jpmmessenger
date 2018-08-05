@@ -19,6 +19,7 @@ public class server extends JFrame {
 		super("JPM Messenger | Server");
 		userText = new JTextField();
 		userText.setEditable(false);
+	    
 		userText.addActionListener(
 			new ActionListener() {
 				public void actionPerformed(ActionEvent event) {

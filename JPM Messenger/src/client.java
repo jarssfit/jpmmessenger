@@ -19,6 +19,7 @@ public class client extends JFrame {
 		serverIP = host;
 		userText  = new JTextField();
 		userText.setEditable(false);
+		
 		userText.addActionListener(
 			new ActionListener() {
 				public void actionPerformed(ActionEvent event) {
@@ -97,9 +98,9 @@ public class client extends JFrame {
 		//sending messages
 		private void sendMessage(String message) {
 			try {
-				output.writeObject("YOU :-"+message);
+				output.writeObject("CLIENT :-"+message);
 				output.flush();
-				showMessage("\nYOU :-"+message);
+				showMessage("\n CLIENT:-"+message);
 			} catch(IOException ioException) {
 				chatWindow.append("\n somethings wrong or invalid message");
 			}
@@ -121,7 +122,7 @@ public class client extends JFrame {
 			SwingUtilities.invokeLater(
 					new Runnable() {
 						public void run() {
-							chatWindow.append(message);
+							userText.setEditable(tof);
 						}
 					}
 			);
