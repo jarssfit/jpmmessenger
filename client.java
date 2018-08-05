@@ -13,7 +13,7 @@ public class client extends JFrame {
 	private String serverIP;
 	private Socket connection;
 	
-	//construct
+	//constructor
 	public client(String host) {
 		super("JPM Messenger | Client");
 		serverIP = host;
