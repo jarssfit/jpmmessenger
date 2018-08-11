@@ -29,6 +29,6 @@ Legend for above:-
 * to be done immediately
 + future plan
 _ to remove
-// explain/chat/message/broadcast/comment about stuff. (eg: //@from-@to: (message)
+// explain/chat/message/broadcast/comment about stuff. (eg: //@from-@to: [message])
 
 (legends can be used in combination as well.)
