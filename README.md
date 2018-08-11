@@ -2,7 +2,7 @@
 A basic java based messenger for college project.
 
 ---------------------------------------------------------------------------------
-/*****TODO******/
+*****TODO******
 --Add multi-threading to server side.  //this is our current goal.
 -Develop a database for storing messages.
 --GUI.
@@ -11,7 +11,7 @@ A basic java based messenger for college project.
 -Encryption for messages.
 
 ---------------------------------------------------------------------------------
-/*****TO LEARN*****/
+*****TO LEARN*****
 --Multi-threading.  //this is to be learnt.
 -mysql/database.
 --swing/fx.
