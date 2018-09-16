@@ -6,7 +6,7 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-public class server extends JFrame {
+public class server extends JFrame implements Runnable {
 	
 	//defining all variable objects
 	private JTextField userText;
@@ -38,7 +38,7 @@ public class server extends JFrame {
 	}
 	
 	//server set and running
-	public void startRunning() {
+	public void run() {
 		try {
 			server = new ServerSocket(8008,100); //(port, max users queue)
 			while(true) {
@@ -62,9 +62,9 @@ public class server extends JFrame {
 	
 	//wait for connection and display info
 	private void waitForConnection() throws IOException {
-		showMessage("waiting for someone...\n");
-		connection = server.accept();
-		showMessage("connected to"+connection.getInetAddress().getHostName());
+			showMessage("waiting for someone...\n");
+			connection = server.accept();
+			showMessage("connected to"+connection.getInetAddress().getHostName());
 	}
 	
 	//set up stream
